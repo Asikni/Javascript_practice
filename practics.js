@@ -132,3 +132,43 @@ try {
 catch(err) {
   document.getElementById("demow").innerHTML = err.name;
 }
+
+class Car {
+  constructor(name, year) {
+    this.name = name;
+    this.year = year;
+  }
+  age() {
+    const date = new Date();
+    return date.getFullYear() - this.year;
+  }
+}
+
+const myCar = new Car("Ford", 2014);
+document.getElementById("demor").innerHTML =
+"My car is " + myCar.age() + " years old.";
+
+
+class state{
+  constructor(name , capital, year) {
+    this.name = name;
+    this.capital = capital;
+    this.year = year
+  }
+  age(){
+    const date = new Date();
+    return date.getFullYear() - this.year
+  }
+
+  region(){
+    if (this.year < 1975){
+      return "old state"
+    }
+    else{
+      return "new state"
+    }
+  }
+}
+
+const State = new state("J&K", "Srinagar", 1954);
+document.getElementById("demot").innerHTML = State.region()
