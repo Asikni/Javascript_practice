@@ -25,3 +25,21 @@ body{
 #demo3 {
     background: rgba(0,128,0, 0.2);
 }
+a{
+    font-size: 40px;
+}
+a:link {
+    text-decoration: none;
+  }
+  
+a:visited {
+    text-decoration: none;
+  }
+  
+a:hover {
+    text-decoration: underline;
+  }
+  
+ a:active {
+    text-decoration: underline;
+  }
