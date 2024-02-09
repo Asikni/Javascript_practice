@@ -155,6 +155,9 @@ class state{
     this.capital = capital;
     this.year = year
   }
+  static imran(){
+    alert("abc")
+  }
   age(){
     const date = new Date();
     return date.getFullYear() - this.year
@@ -170,5 +173,25 @@ class state{
   }
 }
 
-const State = new state("J&K", "Srinagar", 1954);
-document.getElementById("demot").innerHTML = State.region()
+const a = new state("J&K", "Srinagar", 1954);
+const State_2 = new state("Delhi", "delhi", 1990);
+
+state.imran()
+// document.getElementById("demot").innerHTML = State.region()
+
+let fruit = {
+  a: " tomato", 
+  b: function(){
+    console.log('op',this)
+  }, 
+  c: () => {
+    console.log("low", this.sw)
+  }
+
+}
+
+const f = fruit.b.bind({
+  sw: "potato"
+})
+f();
+fruit.c();
