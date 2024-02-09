@@ -1,3 +1,27 @@
 h1{
     background-color: rebeccapurple;
 }
+
+#demo2 {
+    border: 2px solid black;
+    background-color: aqua;
+    opacity: 1;
+}
+body{
+    background-color: chartreuse;
+}
+.fixed-bg {
+    background-image: url("https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA4L3Jhd3BpeGVsb2ZmaWNlMjBfYV9jbG9zZV91cF9vZl9hX2NvbG9yZnVsX2ZsdWlkX2Fic3RyYWN0X3BhbGVfd18xYTg4YWI2Ny1jMzdmLTQ2ZTctYjk5OC1hMjI2N2U3YmI4ODBfMi5qcGc.jpg");
+    min-height: 800px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+.fixed{
+    height: 800px;
+    background-color: yellow;
+}
+#demo3 {
+    background: rgba(0,128,0, 0.2);
+}
