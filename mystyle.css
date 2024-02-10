@@ -51,7 +51,7 @@ a:visited {
 a:hover {
     text-decoration: underline;
     cursor: pointer;
-    color :rgba(0,128,0, 0.2)
+    color :rgb(111, 0, 128)
   }
   
  a:active {
@@ -72,7 +72,7 @@ a:hover {
 }
 /* TO control the entire browser screen */
 
-.col-1 {width: 8.33%;}  /*first col has the width 8%*/
+.col-1 {width: 8.33%;}  /*first col has the width 8% of the entire area*/
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
 .col-4 {width: 33.33%;}
@@ -100,4 +100,43 @@ a:hover {
 
 .cityName{
   border: 2px solid rgb(252, 3, 3);
+}
+
+.transition {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s ,height 4s ,background-color 4s, transform 4s;
+}
+
+.transition:hover {
+  width: 300px;
+  height: 300px;
+  background-color: #ffffff;
+  transform: rotate(180deg);
+  transition-timing-function: ease-in;
+}
+
+.animation {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 20s;
+  animation-delay: 2s;
+  animation-direction: alternate;
+  animation-iteration-count: 3;
+  animation-fill-mode: both;
+
+  /* can use animation shorthand to do the same...
+  animation : example 20s alternate 2s 3 both */
+}
+
+@keyframes example {
+  0%   {background-color:rgb(0, 213, 255); left:0px; top:0px;}
+  25%  {background-color:rgb(3, 3, 3); left:1000px; top:0px;}
+  50%  {background-color:blue; left:1000px; top:300px;}
+  75%  {background-color:green; left:0px; top:300px;}
+  100% {background-color:red; left:0px; top:0px;}
 }
