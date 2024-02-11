@@ -71,7 +71,35 @@ a:hover {
   padding: 15px;
 }
 /* TO control the entire browser screen */
+/* For mobile phones: */
 
+/*upto 600px the width of all colums would be 100% i.e cover
+the entire screen if browser size falls below 768px*/ 
+[class*="col-"] {
+  width: 100%;
+}
+
+
+/*b/w 600 to 768 px the elements would be like this*/
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+
+
+
+@media only screen and (min-width: 768px) {
 .col-1 {width: 8.33%;}  /*first col has the width 8% of the entire area*/
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
@@ -83,7 +111,12 @@ a:hover {
 .col-9 {width: 75%;}
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
- .col-12 {width: 100%;}  /*last col has the width of 100% */
+.col-12 {width: 100%;}  /*last col has the width of 100% */
+}
+/*upto 768px the width of all colums would be 100% i.e cover
+the entire screen if browser size falls below 768px*/ 
+
+ 
 
 .menu li {
   padding: 8px;
